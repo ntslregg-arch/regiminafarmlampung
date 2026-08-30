@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="REGI MINA FARM LAMPUNG - Budidaya dan penjualan ikan lele, gurame, dan nila.">
+  <title>REGI MINA FARM LAMPUNG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <a href="#beranda" class="logo">REGI <span>MINA FARM</span></a>
+  <nav><a href="#beranda">Beranda</a><a href="#produk">Produk</a><a href="#tentang">Tentang</a><a href="#galeri">Galeri</a><a href="#testimoni">Testimoni</a><a href="#kontak">Kontak</a><a href="#lacak">Lacak Pesanan</a><a class="nav-wa" href="https://wa.me/628988201049" target="_blank" rel="noopener">WhatsApp Kami</a></nav>
+  <div class="nav-actions"><div id="storeStatus" class="store-status">● Cek status</div><button class="cart-button" id="openCart" type="button">Keranjang <span id="cartCount">0</span></button></div>
+</header>
+
+<main>
+<section id="beranda" class="hero-slider" aria-label="Promosi REGI MINA FARM LAMPUNG">
+  <div class="slides">
+    <article class="slide active"><div class="slide-copy"><p class="eyebrow">REGI MINA FARM LAMPUNG</p><h1>IKAN SEGAR<br><span>KUALITAS TERBAIK</span></h1><p>Langsung dari kolam REGI MINA FARM LAMPUNG. Segar, berkualitas, dan siap untuk kebutuhan Anda.</p><a class="btn primary" href="#produk">Belanja Sekarang</a></div><div class="slide-art fish-art">🐟</div></article>
+    <article class="slide"><div class="slide-copy"><p class="eyebrow">BUDIDAYA ALAMI</p><h1>PAKAN BERKUALITAS<br><span>HASIL TERJAGA</span></h1><p>Budidaya dengan perhatian pada kualitas pakan dan perawatan ikan.</p><a class="btn primary" href="#tentang">Tentang Kami</a></div><div class="slide-art farm-art">🌾🐟</div></article>
+    <article class="slide"><div class="slide-copy"><p class="eyebrow">ORDER ECER & GROSIR</p><h1>BELI SESUAI<br><span>KEBUTUHAN</span></h1><p>Untuk rumah tangga, warung, restoran, pengepul, hingga pelanggan sekitar.</p><a class="btn primary" href="#produk">Lihat Produk</a></div><div class="slide-art order-art">🛒🐟</div></article>
+    <article class="slide"><div class="slide-copy"><p class="eyebrow">PESAN MUDAH</p><h1>ORDER VIA<br><span>WHATSAPP</span></h1><p>Masukkan nomor WhatsApp aktif, pilih jumlah ikan, lalu kirim pesanan dengan cepat.</p><a class="btn primary" href="#kontak">Hubungi REGI MINA FARM</a></div><div class="slide-art wa-art">💬📱</div></article>
+  </div>
+  <button class="slider-arrow prev" type="button" aria-label="Slide sebelumnya">‹</button><button class="slider-arrow next" type="button" aria-label="Slide berikutnya">›</button>
+  <div class="slider-dots" aria-label="Navigasi slide"><button class="dot active" data-slide="0"></button><button class="dot" data-slide="1"></button><button class="dot" data-slide="2"></button><button class="dot" data-slide="3"></button></div>
+</section>
+
+<section id="promo" class="promo-section section"><div class="section-heading"><p class="eyebrow">PROMO</p><h2>Promo & Penawaran</h2><p>Penawaran aktif dari REGI MINA FARM LAMPUNG.</p></div><div id="promoGrid" class="promo-grid"></div><div id="voucherBox" class="voucher-box"><label for="voucherCode">Punya kode voucher?</label><div class="voucher-row"><input id="voucherCode" type="text" placeholder="Masukkan kode voucher"><button class="btn" id="applyVoucher" type="button">Pakai Voucher</button></div><small id="voucherMessage" class="hint"></small></div></section>
+
+<section id="produk" class="section">
+  <div class="section-heading"><p class="eyebrow">PRODUK KAMI</p><h2>Ikan Air Tawar</h2><p>Pilih ikan, tentukan jumlah kilogram, lalu masukkan ke keranjang.</p></div>
+  <div class="product-tools"><input id="productSearch" type="search" placeholder="Cari ikan..." aria-label="Cari produk"><select id="productFilter" aria-label="Filter produk"><option value="all">Semua produk</option><option value="available">Tersedia</option><option value="soldout">Habis</option></select></div>
+  <div class="products">
+    <article class="product-card" data-product="Lele" data-price="20500" data-stock="100">
+      <div class="product-image">🐟</div><div class="stock-badge">Stok <strong>100 Kg</strong></div><h3>Lele</h3><p>Ikan lele hasil budidaya Regi Mina Farm.</p>
+      <div class="price">Rp20.500 <small>/Kg</small></div><div class="buy-row"><input class="qty" type="number" min="1" max="100" value="1" aria-label="Jumlah Lele dalam Kg"><button class="btn primary add-cart" type="button">+ Keranjang</button></div>
+    </article>
+    <article class="product-card" data-product="Gurame" data-price="35000" data-stock="50">
+      <div class="product-image">🐠</div><div class="stock-badge">Stok <strong>50 Kg</strong></div><h3>Gurame</h3><p>Gurame untuk konsumsi dan kebutuhan pelanggan.</p>
+      <div class="price">Rp35.000 <small>/Kg</small></div><div class="buy-row"><input class="qty" type="number" min="1" max="50" value="1" aria-label="Jumlah Gurame dalam Kg"><button class="btn primary add-cart" type="button">+ Keranjang</button></div>
+    </article>
+    <article class="product-card" data-product="Nila" data-price="28000" data-stock="75">
+      <div class="product-image">🐟</div><div class="stock-badge">Stok <strong>75 Kg</strong></div><h3>Nila</h3><p>Nila budidaya untuk konsumsi.</p>
+      <div class="price">Rp28.000 <small>/Kg</small></div><div class="buy-row"><input class="qty" type="number" min="1" max="75" value="1" aria-label="Jumlah Nila dalam Kg"><button class="btn primary add-cart" type="button">+ Keranjang</button></div>
+    </article>
+  </div>
+</section>
+
+<section id="tentang" class="about section"><div><p class="eyebrow">TENTANG KAMI</p><h2>Dari kolam, langsung untuk pelanggan.</h2></div><div><p>REGI MINA FARM LAMPUNG adalah usaha budidaya ikan air tawar yang berfokus pada penyediaan ikan segar untuk pelanggan lokal. Kami terus berusaha menjaga kualitas ikan dan pelayanan agar pelanggan nyaman berbelanja.</p></div></section>
+<section id="lacak" class="section track-section"><div class="section-heading"><p class="eyebrow">LACAK PESANAN</p><h2>Cek status pesanan Anda</h2><p>Masukkan Order ID dan nomor WhatsApp yang digunakan saat checkout.</p></div><div class="track-box"><label for="trackOrderId">Order ID <span>*</span></label><input id="trackOrderId" type="text" placeholder="Contoh: RMF-12345678" maxlength="30"><label for="trackWa">Nomor WhatsApp <span>*</span></label><input id="trackWa" type="tel" inputmode="numeric" placeholder="Contoh: 081234567890" maxlength="20"><button class="btn primary" id="trackOrderBtn" type="button">Lacak Pesanan</button><div id="trackResult" class="track-result" aria-live="polite"></div></div></section>
+
+<section id="galeri" class="gallery section"><div class="section-heading"><p class="eyebrow">GALERI FARM</p><h2>Suasana REGI MINA FARM LAMPUNG</h2><p>Dokumentasi asli kegiatan dan lingkungan farm.</p></div><div id="galleryGrid" class="gallery-grid"></div></section>
+
+<section id="testimoni" class="testimonials section"><div class="section-heading"><p class="eyebrow">TESTIMONI PELANGGAN</p><h2>Pengalaman pelanggan kami</h2><p>Hanya testimoni yang berasal dari pesanan nyata dan sudah diverifikasi Admin yang ditampilkan.</p></div><div id="testimonialGrid" class="testimonial-grid"></div><div class="testimonial-action"><button class="btn primary" id="openTestimonial" type="button">★ Beri Testimoni</button><p class="hint">Khusus pelanggan dengan pesanan yang sudah berstatus <strong>Selesai</strong>.</p></div></section>
+
+<div class="testimonial-modal modal" id="testimonialModal" aria-hidden="true"><div class="modal-box"><button class="close" id="closeTestimonial" type="button">×</button><p class="eyebrow">PELANGGAN</p><h2>Beri Testimoni</h2><p class="hint">Masukkan ID pesanan dan nomor WhatsApp yang digunakan saat checkout. Sistem hanya menerima pesanan nyata yang sudah berstatus <strong>Selesai</strong>.</p><label for="testimonialOrder">ID Pesanan <span>*</span></label><input id="testimonialOrder" type="text" placeholder="Contoh: RMF-12345678" maxlength="30" required><label for="testimonialWa">Nomor WhatsApp saat order <span>*</span></label><input id="testimonialWa" type="tel" inputmode="numeric" placeholder="Contoh: 081234567890" maxlength="20" required><label for="testimonialName">Nama tampilan <span>*</span></label><input id="testimonialName" type="text" placeholder="Nama Anda" maxlength="60" required><label for="testimonialRating">Rating <span>*</span></label><select id="testimonialRating"><option value="5">★★★★★ — 5</option><option value="4">★★★★☆ — 4</option><option value="3">★★★☆☆ — 3</option><option value="2">★★☆☆☆ — 2</option><option value="1">★☆☆☆☆ — 1</option></select><label for="testimonialText">Ulasan <span>*</span></label><textarea id="testimonialText" rows="5" maxlength="500" placeholder="Ceritakan pengalaman Anda..."></textarea><button class="btn primary" id="submitTestimonial" type="button">Kirim Testimoni</button><small class="hint">Testimoni akan masuk ke daftar verifikasi Admin terlebih dahulu. Tidak langsung tampil sebagai testimoni terverifikasi.</small></div></div>
+<section class="cta"><p class="eyebrow">BELANJA IKAN</p><h2>Pesan lebih mudah lewat keranjang.</h2><p>Pilih produk dan jumlahnya. Nomor WhatsApp aktif wajib diisi sebelum pesanan dikirim.</p><a class="btn primary" href="#produk">Mulai Belanja</a></section>
+<section id="kontak" class="contact section"><div><p class="eyebrow">KONTAK</p><h2>REGI MINA FARM LAMPUNG</h2></div><div class="contact-info"><p><strong>WhatsApp REGI MINA FARM</strong><br><a href="https://wa.me/628988201049" target="_blank" rel="noopener">+62 898-8201-049</a></p><p><strong>Lokasi</strong><br>Lampung, Indonesia</p><p><strong>Jam pelayanan</strong><br>05:30 - 21:00 WIB</p></div></section>
+</main>
+<footer><p>© 2026 REGI MINA FARM LAMPUNG. All rights reserved.</p></footer>
+<button class="admin-launch" id="adminLaunch" type="button">⚙ Admin</button>
+
+<div class="modal" id="cartModal" aria-hidden="true"><div class="modal-box"><button class="close" id="closeCart" type="button">×</button><p class="eyebrow">CHECKOUT</p><h2>Keranjang Belanja</h2><div id="cartItems"></div><div class="cart-total"><span>Total</span><strong id="cartTotal">Rp0</strong></div><label for="buyerName">Nama penerima <span>*</span></label><input id="buyerName" type="text" placeholder="Contoh: Regi" autocomplete="name" maxlength="80" required><small class="hint">Nama orang yang akan menerima pesanan.</small><label for="buyerLocation">Lokasi penerima <span>*</span></label><textarea id="buyerLocation" rows="3" placeholder="Contoh: Jl. ..., Desa ..., Kecamatan ..., Lampung" autocomplete="street-address" maxlength="300" required></textarea><small class="hint">Masukkan alamat/lokasi penerima selengkap mungkin.</small><label for="buyerWa">Nomor WhatsApp aktif <span>*</span></label><input id="buyerWa" type="tel" inputmode="numeric" placeholder="Contoh: 081234567890" autocomplete="tel" required><small class="hint">Wajib diisi. Gunakan nomor WhatsApp yang bisa dihubungi.</small><label for="deliveryMethod">Metode pengambilan <span>*</span></label><select id="deliveryMethod" required><option value="">Pilih pengambilan</option><option value="Ambil di Farm">Ambil di Farm</option><option value="Diantar">Diantar</option></select><div id="discountSummary" class="discount-summary" hidden></div><label for="paymentMethod">Metode pembayaran <span>*</span></label><select id="paymentMethod" required><option value="">Pilih metode pembayaran</option><option value="DANA">DANA</option><option value="GoPay">GoPay</option><option value="Transfer Bank BCA">Transfer Bank BCA</option><option value="Transfer Bank BRI">Transfer Bank BRI</option><option value="Transfer Bank NeoBank">Transfer Bank NeoBank</option></select><div id="paymentDetails" class="payment-details" aria-live="polite"><span>Pilih metode pembayaran untuk melihat detail.</span></div><small class="hint">Pastikan nama pemilik rekening/akun pembayaran sesuai saat melakukan pembayaran.</small><div class="payment-list"><strong>Pembayaran tersedia:</strong><span>DANA</span><span>GoPay</span><span>Bank BCA</span><span>Bank BRI</span><span>Bank NeoBank</span></div><button class="btn primary checkout" id="checkout" type="button">Beli Sekarang via WhatsApp</button></div></div>
+
+<div class="admin-modal" id="adminModal" aria-hidden="true">
+  <div class="admin-login" id="adminLogin">
+    <button class="admin-close" id="adminLoginClose" type="button">×</button>
+    <p class="eyebrow">ADMIN</p><h2>Login Admin</h2>
+    <p class="admin-sub">Masukkan password untuk membuka editor website.</p>
+    <input id="adminPassword" type="password" placeholder="Password admin" autocomplete="current-password">
+    <button class="btn primary" id="adminLoginBtn" type="button">Masuk</button>
+    <p class="admin-note">Password default: <strong>admin123</strong>. Ganti melalui bagian keamanan setelah login.</p>
+  </div>
+  <div class="admin-box" id="adminEditor" hidden>
+    <button class="admin-close" id="adminClose" type="button">×</button>
+    <p class="eyebrow">WEBSITE CONTROL</p><h2>Admin — Edit Semua Website</h2>
+    <p class="admin-sub">Perubahan tersimpan di browser ini menggunakan localStorage. Untuk website publik multi-device, gunakan backend/database.</p>
+    <div class="admin-tabs">
+      <button class="active" data-tab="dashboard" type="button">Dashboard</button><button data-tab="general" type="button">Umum</button><button data-tab="hero" type="button">Banner 4 Slide</button><button data-tab="products" type="button">Produk & Stok</button><button data-tab="payment" type="button">Pembayaran</button><button data-tab="promos" type="button">Promo</button><button data-tab="gallery" type="button">Galeri</button><button data-tab="testimonials" type="button">Testimoni</button><button data-tab="appearance" type="button">Tampilan</button><button data-tab="security" type="button">Keamanan</button>
+    </div>
+    <div class="admin-tab active" id="tab-dashboard"><div class="dashboard-grid"><div class="dash-card"><span>Pesanan</span><strong id="dashOrders">0</strong></div><div class="dash-card"><span>Penjualan</span><strong id="dashSales">Rp0</strong></div><div class="dash-card"><span>Item Terjual</span><strong id="dashItems">0 Kg</strong></div><div class="dash-card"><span>Stok Menipis</span><strong id="dashLowStock">0</strong></div></div><div class="admin-section"><h3>Pesanan Terbaru</h3><div id="orderList" class="order-list"></div></div><div class="admin-actions"><button class="btn" id="exportData" type="button">Backup Data</button><label class="btn file-btn">Restore Data<input id="importData" type="file" accept="application/json" hidden></label></div></div>
+    <div class="admin-tab" id="tab-general">
+      <div class="admin-grid">
+        <div class="admin-section"><h3>Identitas</h3><div class="admin-field"><label>Nama website</label><input id="aSiteName"></div><div class="admin-field"><label>Tagline</label><input id="aTagline"></div><div class="admin-field"><label>Deskripsi</label><textarea id="aDescription"></textarea></div></div>
+        <div class="admin-section"><h3>Kontak & pelayanan</h3><div class="admin-field"><label>WhatsApp tujuan</label><input id="aFarmWa" inputmode="numeric"></div><div class="admin-field"><label>Lokasi</label><input id="aLocation"></div><div class="admin-field"><label>Jam pelayanan</label><input id="aHours"></div><div class="admin-field"><label>Minimum order (Kg)</label><input id="aMinOrder" type="number" min="1"></div><div class="admin-field"><label>Batas stok menipis (Kg)</label><input id="aLowStock" type="number" min="0"></div></div>
+      </div>
+    </div>
+    <div class="admin-tab" id="tab-hero"><div id="heroFields"></div></div>
+    <div class="admin-tab" id="tab-products"><div id="productFields"></div><button class="btn" id="addProduct" type="button">+ Tambah Produk</button></div>
+    <div class="admin-tab" id="tab-payment"><div class="admin-grid"><div class="admin-section"><h3>DANA</h3><div class="admin-field"><label>Nomor</label><input id="pDANA"></div></div><div class="admin-section"><h3>GoPay</h3><div class="admin-field"><label>Nomor</label><input id="pGoPay"></div></div><div class="admin-section"><h3>Bank BCA</h3><div class="admin-field"><label>Nomor rekening</label><input id="pBCA"></div></div><div class="admin-section"><h3>Bank BRI</h3><div class="admin-field"><label>Nomor rekening</label><input id="pBRI"></div></div><div class="admin-section"><h3>Bank NeoBank</h3><div class="admin-field"><label>Nomor rekening</label><input id="pNeoBank"></div></div></div></div>
+    <div class="admin-tab" id="tab-promos"><div id="promoFields"></div><div class="admin-actions"><button class="btn" id="addPromo" type="button">+ Tambah Promo</button><button class="btn primary" id="savePromos" type="button">Simpan Promo & Tampilkan</button></div><p class="admin-note">Promo yang diaktifkan akan tampil di halaman publik. Admin dapat mengatur nama, deskripsi, diskon, masa berlaku, dan status aktif.</p></div><div class="admin-tab" id="tab-gallery"><div id="galleryFields"></div><p class="admin-note">Galeri menggunakan foto asli yang sudah disertakan dalam paket website. Admin dapat mengubah judul, keterangan, dan menampilkan/menyembunyikan foto.</p></div>
+    <div class="admin-tab" id="tab-testimonials"><div class="admin-section"><h3>Testimoni pelanggan masuk</h3><p class="admin-note">Testimoni dari pelanggan masuk ke sini. Verifikasi berdasarkan Order ID dan data pesanan sebelum ditampilkan publik.</p><div id="pendingTestimonialFields"></div></div><div class="admin-section"><h3>Testimoni terverifikasi</h3><p class="admin-note">Gunakan bagian ini untuk mengelola testimoni yang sudah disetujui.</p><div id="testimonialFields"></div><button class="btn" id="addTestimonial" type="button">+ Tambah Testimoni dari Pesanan Selesai</button></div></div>
+    <div class="admin-tab" id="tab-appearance"><div class="admin-section"><h3>Background website</h3><div class="admin-field"><label>URL gambar background</label><input id="aBgUrl" placeholder="https://.../gambar.jpg"></div><div class="admin-field"><label>Upload background dari perangkat</label><input id="aBgFile" type="file" accept="image/*"></div><p class="admin-note">Upload menyimpan gambar di browser. Untuk performa terbaik, gunakan gambar terkompresi.</p></div></div>
+    <div class="admin-tab" id="tab-security"><div class="admin-section"><h3>Password admin</h3><div class="admin-field"><label>Password baru</label><input id="aNewPassword" type="password" placeholder="Minimal 6 karakter"></div><p class="admin-note">Password hanya tersimpan di browser ini. Jangan mengandalkan panel ini sebagai keamanan server.</p></div></div>
+    <div class="admin-actions"><button class="btn primary" id="saveAdmin" type="button">Simpan Perubahan</button><button class="btn" id="resetAdmin" type="button">Reset ke Default</button><button class="btn" id="adminLogout" type="button">Logout</button></div>
+  </div>
+</div>
+<div class="music-widget" aria-label="Pemutar musik website">
+  <div class="music-icon">♫</div>
+  <div class="music-copy"><strong>Kekasih Yang Tak Dianggap</strong><small>DJ Remix • Auto Play</small></div>
+  <button class="music-play" id="musicPlay" type="button" aria-label="Putar musik">▶</button>
+</div>
+<div class="music-player" id="musicPlayer" aria-hidden="true">
+  <iframe id="spotifyPlayer" title="Kekasih Yang Tak Dianggap DJ Remix" src="https://open.spotify.com/embed/track/2VEY0DKBDhDTiJfuvEC1XJ?utm_source=generator&theme=0&autoplay=1" width="100%" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="eager"></iframe>
+</div>
+
+<script src="script.js"></script><script>
+// Music auto-play: browser policy may block audible autoplay until the visitor interacts.
+const musicPlayer=document.getElementById('musicPlayer');
+const musicPlay=document.getElementById('musicPlay');
+const spotifyPlayer=document.getElementById('spotifyPlayer');
+function openMusic(){ musicPlayer.classList.add('show'); musicPlayer.setAttribute('aria-hidden','false'); }
+window.addEventListener('load',()=>setTimeout(openMusic,500));
+musicPlay.addEventListener('click',openMusic);
+
+const slides=[...document.querySelectorAll('.slide')], dots=[...document.querySelectorAll('.dot')]; let slideIndex=0, slideTimer;
+function showSlide(i){slideIndex=(i+slides.length)%slides.length; slides.forEach((s,n)=>s.classList.toggle('active',n===slideIndex)); dots.forEach((d,n)=>d.classList.toggle('active',n===slideIndex));}
+function startSlider(){clearInterval(slideTimer); slideTimer=setInterval(()=>showSlide(slideIndex+1),5000)}
+document.querySelector('.next').onclick=()=>{showSlide(slideIndex+1);startSlider()}; document.querySelector('.prev').onclick=()=>{showSlide(slideIndex-1);startSlider()}; dots.forEach(d=>d.onclick=()=>{showSlide(Number(d.dataset.slide));startSlider()}); startSlider();
+</script>
+</body>
+</html>
